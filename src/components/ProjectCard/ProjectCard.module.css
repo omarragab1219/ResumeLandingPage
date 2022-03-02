@@ -1,0 +1,178 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18rem;
+  z-index: +10000000000000000000000000000000000000000000000000;
+}
+
+.projectContainer {
+  z-index: +10000000000000000000000000000000000000000000000000;
+  z-index: +2;
+  display: flex;
+  background-color: rgb(255, 217, 0);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 60px;
+  border-radius: 1rem;
+  border: 4px solid black;
+  box-shadow: 0px 0px 3px 5px rgb(255, 255, 255);
+  transition: 0.2s ease-in-out;
+}
+
+.title {
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+.description {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+.titleImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectImage {
+  padding: 10px;
+  width: 16rem;
+  border-radius: 40px;
+}
+/* -------------------------------------------------------------------------- */
+.allTextContainer {
+  z-index: +10000000000000000000000000000000000000000000000000;
+  z-index: +2;
+  width: 40rem;
+  margin-left: 8rem;
+  color: white;
+  background-color: #040a1a;
+  padding: 20px 20px 20px 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 3px #ffffff;
+}
+.techAndSourceCodeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.techUsed {
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+.techOptionContainerEven,
+.techOptionContainerOdd {
+  font-size: 1.4rem;
+  list-style: none;
+  display: grid;
+}
+.techOptionContainerEven li,
+.techOptionContainerOdd li {
+  padding: 10px;
+  font-weight: bold;
+}
+.techOptionContainerEven {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.techOptionContainerOdd {
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.techOption4 {
+  grid-row: 2/3;
+  grid-column: 4/6;
+}
+.techOption5 {
+  grid-row: 2/3;
+  grid-column: 5/7;
+}
+
+.SouceCodeButton {
+  margin-top: 1.5rem;
+}
+
+.projectContainer:hover {
+  transform: scale(1.1);
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1240px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 14rem;
+  }
+  .allTextContainer {
+    margin-left: 0;
+    margin-top: 2rem;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 694px) {
+  .allTextContainer {
+    width: 30rem;
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .allTextContainer {
+    width: 25rem;
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .projectContainer {
+    padding: 0px;
+    border-radius: 1rem;
+  }
+  .allTextContainer {
+    width: 19rem;
+    padding: 10px 10px 10px 10px;
+  }
+  .title {
+    font-size: 2.2rem;
+    padding: 1rem;
+  }
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+  .techUsed {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .techOptionContainerEven,
+  .techOptionContainerOdd {
+    font-size: 1.1rem;
+    padding-right: 10px;
+  }
+  .techOptionContainerEven li,
+  .techOptionContainerOdd li {
+    padding: 0px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  .SouceCodeButton {
+    margin-top: 0rem;
+  }
+}

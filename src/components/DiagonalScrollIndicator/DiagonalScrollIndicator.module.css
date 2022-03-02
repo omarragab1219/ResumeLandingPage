@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  z-index: +1;
+}
+
+.top1 {
+  /* transform: rotate(60deg); */
+  position: absolute;
+  top: -40rem;
+  right: -24rem;
+}
+.top2 {
+  /* transform: rotate(60deg); */
+  position: absolute;
+  top: -40rem;
+  right: 50rem;
+}
+
+.mid1 {
+  position: absolute;
+  top: 18rem;
+  right: 48rem;
+}
+.mid2 {
+  position: absolute;
+  top: 18rem;
+  right: 28rem;
+}
+
+.bottom1 {
+  position: absolute;
+  top: 124rem;
+  right: 90rem;
+}
+
+.bottom2 {
+  position: absolute;
+  top: 105rem;
+  right: 27rem;
+}

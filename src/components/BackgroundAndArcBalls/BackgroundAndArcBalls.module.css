@@ -1,0 +1,169 @@
+.container {
+  position: relative;
+  /* overflow: hidden; */
+  height: 2400px;
+
+  /* overflow: hidden; */
+  /* width: 1802.95; */
+
+  display: flex;
+  justify-content: center;
+
+  /* margin-top: 2rem; */
+}
+.Background {
+  /* overflow: hidden; */
+  /* z-index: +2000000000000000000000000000000000000000; */
+  /* margin-right: 90rem; */
+  /* position: absolute; */
+  /* left: 27rem;
+  top: -3rem;  */
+  /* margin-left: 2rem; */
+}
+.MobileBackground {
+  display: none;
+}
+.arcBalls {
+  /* background-color: royalblue; */
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+  /* position: relative; */
+  top: 0rem;
+  display: flex;
+  justify-content: center;
+}
+.arcBallsCenter {
+  position: absolute;
+  width: 5rem;
+  height: 10rem;
+
+  position: relative;
+}
+.arc0Negative1 {
+  position: absolute;
+
+  top: -3rem;
+  z-index: +100000000000;
+  left: -93rem;
+}
+.arc0 {
+  /* background-color: red; */
+  position: absolute;
+  /* left: 11rem; */
+  top: -3rem;
+  z-index: +100000000000;
+  left: -60rem;
+  /* margin-right: 87rem; */
+}
+.arc1 {
+  /* background-color: red; */
+  position: absolute;
+  /* left: 11rem; */
+  top: -3rem;
+  z-index: +100000000000;
+  left: -50rem;
+  /* margin-right: 87rem; */
+}
+
+.arc2 {
+  /* background-color: rgb(47, 255, 0); */
+  position: absolute;
+  left: -17rem;
+  top: -3rem;
+  z-index: +100000000000;
+}
+/* 10 dif */
+.arc3 {
+  /* background-color: rgb(0, 85, 255); */
+  position: absolute;
+  left: -7rem;
+  top: -3rem;
+  z-index: +100000000000;
+}
+/* 33 dif */
+.arc4 {
+  /* background-color: rgb(0, 255, 204); */
+  position: absolute;
+  left: 26rem;
+  top: -3rem;
+  z-index: +100000000000;
+}
+.arc5 {
+  /* background-color: rgb(255, 0, 0); */
+  position: absolute;
+  left: 36rem;
+  top: -3rem;
+  z-index: +100000000000;
+}
+.arc6 {
+  /* background-color: rgb(255, 0, 230); */
+  position: absolute;
+  left: 69rem;
+  top: -3rem;
+  z-index: +100000000000;
+}
+.arc7 {
+  /* background-color: rgb(255, 255, 255); */
+  position: absolute;
+  left: 79rem;
+  top: -3rem;
+  z-index: +100000000000;
+}
+
+.arc8 {
+  position: absolute;
+  left: 110rem;
+  top: -3rem;
+  z-index: +100000000000;
+}
+@media only screen and (max-width: 1240px) {
+  .container {
+    height: 3600px;
+  }
+  .Background {
+    display: none;
+  }
+  .MobileBackground {
+    display: block;
+  }
+  .arc0Negative1,
+  .arc0,
+  .arc1,
+  .arc2,
+  .arc5,
+  .arc6,
+  .arc7,
+  .arc8 {
+    display: none;
+  }
+
+  .arc3 {
+    left: 6.5rem;
+  }
+  .arc4 {
+    left: 16.4rem;
+  }
+}
+
+@media only screen and (max-width: 694px) {
+  .container {
+    height: 3800px;
+  }
+  .arc3 {
+    left: 6.5rem;
+  }
+  .arc4 {
+    left: 16.4rem;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .container {
+    height: 4000px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    height: 3300px;
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+
+  position: relative;
+}
+.square {
+  position: absolute;
+  top: 12rem;
+  z-index: -1;
+  height: 50px;
+  width: 50%;
+
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+  /* transform: rotate(45deg); */
+}
+
+@keyframes slidein {
+  0% {
+  }
+
+  50% {
+    margin-left: 50%;
+  }
+  100% {
+  }
+}

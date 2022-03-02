@@ -1,0 +1,142 @@
+.container {
+  margin-top: 339px;
+  height: 18rem;
+  background-color: rgb(4, 10, 26);
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+.leftSide h3 {
+  font-size: 3rem;
+  margin-top: 80px;
+}
+.leftSide p {
+  padding-left: 2px;
+  padding-top: 0.3rem;
+  font-size: 1rem;
+}
+.copyRight {
+  color: #353645;
+  /* margin-top: auto; */
+  margin-bottom: 1rem;
+  margin-top: 80px;
+  font-size: 0.9rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.rightSide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightSide ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleName {
+}
+.link {
+  margin: 8px 0px;
+}
+.link a {
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4753d6;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1240px) {
+  .container {
+    margin-top: 0px;
+  }
+  .leftSide {
+    left: 10px;
+  }
+  .rightSide {
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 634px) {
+  .leftSide {
+    left: 10px;
+  }
+  .rightSide {
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .leftSide h3 {
+    font-size: 2.2rem;
+  }
+  .leftSide p {
+    font-size: 0.9rem;
+  }
+  .copyRight {
+    font-size: 0.8rem;
+  }
+  .leftSide {
+    margin-left: 10px;
+  }
+  .rightSide ul {
+    margin: 10px;
+  }
+
+  .link a {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .leftSide h3 {
+    font-size: 2rem;
+  }
+  .leftSide p {
+    font-size: 0.8rem;
+  }
+  .copyRight {
+    margin-top: 60px;
+    font-size: 0.5rem;
+  }
+  .leftSide {
+    margin-left: 10px;
+  }
+  .rightSide ul {
+    margin: 10px;
+  }
+
+  .link a {
+    font-size: 0.8rem;
+  }
+}
+
+/* @media only screen and (max-width: 694px) {
+  .container {
+    height: 3800px;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .container {
+    height: 4000px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    height: 3300px;
+  }
+} */

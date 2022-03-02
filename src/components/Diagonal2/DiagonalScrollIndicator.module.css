@@ -1,0 +1,111 @@
+.container0 {
+  width: 100%;
+  position: relative;
+  z-index: +100;
+
+  height: calc(2400px - 3rem);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.container1 {
+  height: 2rem;
+  width: 20rem;
+  /* background-color: rgb(21, 255, 0); */
+  position: relative;
+}
+
+.container {
+  width: 100vw;
+  position: relative;
+  z-index: +100;
+  top: 20rem;
+  /* background-color: rgb(81, 255, 0); */
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  /* z-index: +100; */
+}
+/* -------------------------------------------------------------------------- */
+/* right change= 43 */
+.topRightDown0 {
+  position: absolute;
+  top: -2rem;
+  right: 132rem;
+}
+.topRightDown1 {
+  position: absolute;
+  top: -2rem;
+  right: 89rem;
+}
+.topRightDown2 {
+  position: absolute;
+  top: -2rem;
+  right: 46rem;
+}
+
+.topRightDown3 {
+  position: absolute;
+  top: -2rem;
+  right: 3rem;
+}
+
+.topRightDown4 {
+  position: absolute;
+  top: -2rem;
+  right: -40rem;
+}
+.topRightDown5 {
+  position: absolute;
+  top: -2rem;
+  right: -83rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/* right change= 43 */
+.topLeftDown0 {
+  position: absolute;
+  top: -2em;
+  right: 183rem;
+}
+.topLeftDown1 {
+  position: absolute;
+  top: -2em;
+  right: 140rem;
+}
+.topLeftDown2 {
+  position: absolute;
+  top: -2em;
+  right: 97rem;
+}
+.ArcReactor2 {
+  position: absolute;
+}
+
+.topLeftDown3 {
+  position: absolute;
+  top: -2em;
+  right: 54rem;
+}
+.topLeftDown4 {
+  position: absolute;
+  top: -2em;
+  right: 13rem;
+}
+.topLeftDown5 {
+  position: absolute;
+  top: -2em;
+  right: -30rem;
+}
+
+.arc3 {
+  /* z-index: +10000000; */
+  position: absolute;
+  top: -28rem;
+  right: -106rem;
+}

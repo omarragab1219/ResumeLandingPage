@@ -1,0 +1,116 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  /* clip-path: polygon(100% 80%, 50% 90%, 0 80%, 0 0, 100% 0); */
+  position: relative;
+
+  /* z-index: -100; */
+  /* z-index: +100; */
+}
+
+.show {
+  position: absolute;
+  background-color: #d6d3e5;
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  clip-path: polygon(100% 80%, 50% 90%, 0 80%, 0 0, 100% 0);
+}
+
+.show2 {
+  z-index: +10;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: absolute;
+  background-color: rgb(1, 3, 13);
+  background-color: rgb(21, 59, 249);
+  background-color: #000000;
+  height: 20vh;
+  width: 100%;
+  bottom: 0;
+  /* border: 1px solid black; */
+
+  z-index: -1;
+  /* visibility: ; */
+
+  /* border-bottom: 5px solid rgb(255, 255, 255); */
+  /* box-shadow: 0px 10px 5px 1px #fbff00; */
+}
+
+.scroll {
+  color: red;
+  /* z-index: +100; */
+  position: fixed;
+}
+
+.vid {
+  z-index: -10;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  position: absolute;
+  top: 0rem;
+  /* translateZ(0);
+  rotateZ(360deg); */
+  will-change: auto;
+  will-change: scroll-position;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: rotateZ(360deg);
+  transform: translateZ(0);
+}
+
+.img1 {
+  display: none;
+  z-index: -10;
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  position: absolute;
+  top: 0rem;
+  /* translateZ(0);
+  rotateZ(360deg); */
+  will-change: auto;
+  will-change: scroll-position;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: rotateZ(360deg);
+  transform: translateZ(0);
+}
+.pdfButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 29%;
+  position: absolute;
+}
+
+.pdfButton {
+  cursor: pointer;
+  padding: 10px 80px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  border: 1px solid white;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px 1px rgb(0, 0, 0);
+}
+
+.pdfButton:hover {
+  box-shadow: 0px 2px 10px 2px rgb(255, 255, 255);
+}
+
+/* -------------------------------------------------------------------------- */
+@media only screen and (max-width: 1240px) {
+  .img1 {
+    height: 100%;
+    display: inline-block;
+  }
+  .vid {
+    display: none;
+  }
+}

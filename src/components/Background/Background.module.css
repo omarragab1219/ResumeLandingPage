@@ -1,0 +1,28 @@
+.container {
+  height: 2400px;
+  width: calc(100vw + 27rem);
+  overflow: hidden;
+  /* position: absolute; */
+
+  /* z-index: +10000000000000000000000000000000000000000; */
+  position: relative;
+  left: 0;
+}
+
+.DiagonalScrollIndicator {
+  /* visibility: hidden; */
+  position: absolute;
+  top: 4rem;
+  left: 0rem;
+  /* z-index: -10; */
+}
+
+@media only screen and (max-width: 1240px) {
+  .container {
+    height: 3600px;
+    width: calc(100vw + 23rem);
+  }
+  .BackgroundAndArcBalls {
+    left: -23rem;
+  }
+}

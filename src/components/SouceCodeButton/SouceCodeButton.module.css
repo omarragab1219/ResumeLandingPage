@@ -1,0 +1,232 @@
+.container {
+  background-color: rgba(161, 161, 161, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60rem;
+  height: 6rem;
+  overflow: hidden;
+}
+.sourceCodeOutside {
+  z-index: +1;
+  border-radius: 50px;
+  width: 14.5rem;
+  height: 5rem;
+  /* border: 4px solid rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 3px 5px rgb(255, 255, 255); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease-in-out 0s;
+}
+.show {
+  animation: glow 0.7s forwards;
+  border: 4px solid rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 3px 5px rgb(255, 255, 255);
+}
+.dontShow {
+  animation: glow2 0.4s forwards;
+}
+.sourceCodeOutside:hover {
+}
+.sourceCode {
+  /* visibility: hidden; */
+  /* z-index: +2; */
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding: 6px 20px;
+  border: 1px solid white;
+  transition: 0.3s ease-in-out 0s;
+  text-shadow: 0 0 3px #00aaff, 0 0 5px #000000;
+}
+.sourceCode:hover {
+  transform: scale(1.06);
+  background-color: rgb(255, 66, 33);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  /* border: 4px solid rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 3px 5px rgb(255, 255, 255); */
+}
+.gitSGV {
+  width: 3rem;
+  margin-left: 1rem;
+  fill: aliceblue;
+}
+.gitSGV:hover {
+  fill: rgb(0, 0, 0);
+}
+/* -------------------------------------------------------------------------- */
+.lineLeft,
+.lineRight {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  height: 20px;
+  width: 0%;
+  position: absolute;
+  top: 41%;
+  /* animation: leftIn 1s infinite; */
+  animation: leftIn 1s forwards;
+  border: 1px solid rgb(255, 255, 255);
+  /* box-shadow: 0px 0px 3px 5px rgb(255, 255, 255); */
+}
+
+/* -------------------------------------------------------------------------- */
+.lineLeft {
+  left: -1rem;
+}
+
+.lineLeftGlow1,
+.lineLeftGlow2 {
+  border-radius: 50%;
+  height: 0.5px;
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.lineLeftGlow1 {
+  right: 0;
+  animation: moveLeftGlowLeft 2s forwards infinite;
+  box-shadow: 0px 0px 3px 3px rgb(246, 255, 0);
+}
+
+.lineLeftGlow2 {
+  left: -2rem;
+  animation: moveLeftGlowRight 2s forwards infinite;
+  bottom: 0;
+  box-shadow: 0px 0px 3px 3px rgb(246, 255, 0);
+}
+/* -------------------------------------------------------------------------- */
+
+.lineRight {
+  right: -1rem;
+}
+
+.lineRightGlow1,
+.lineRightGlow2 {
+  border-radius: 50%;
+  height: 0.5px;
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.lineRightGlow1 {
+  left: 0;
+  animation: moveRightGlowLeft 2s forwards infinite;
+  box-shadow: 0px 0px 3px 3px rgb(246, 255, 0);
+}
+
+.lineRightGlow2 {
+  right: -2rem;
+  animation: moveRightGlowRight 2s forwards infinite;
+  bottom: 0;
+  box-shadow: 0px 0px 3px 3px rgb(246, 255, 0);
+}
+/* -------------------------------------------------------------------------- */
+
+@keyframes moveRightGlowLeft {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@keyframes moveRightGlowRight {
+  0% {
+    margin-right: 0%;
+  }
+  50% {
+    margin-right: 0%;
+  }
+
+  100% {
+    margin-right: 100%;
+  }
+}
+/* -------------------------------------------------------------------------- */
+@keyframes moveLeftGlowLeft {
+  0% {
+    margin-right: 0%;
+  }
+  50% {
+    margin-right: 100%;
+  }
+  100% {
+    margin-right: 100%;
+  }
+}
+@keyframes moveLeftGlowRight {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 0%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+@keyframes leftIn {
+  0% {
+    width: 10%;
+  }
+
+  50% {
+    margin-left: 0%;
+    width: 50%;
+  }
+  100% {
+    margin-left: 0%;
+    width: 50%;
+  }
+}
+@keyframes glow {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    border: 4px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 3px 5px rgb(255, 255, 255);
+  }
+  100% {
+    width: 17rem;
+    height: 4.5rem;
+    border: 4px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 3px 5px rgb(255, 255, 255);
+    opacity: 1;
+  }
+}
+@keyframes glow2 {
+  0% {
+    width: 17rem;
+    height: 4.5rem;
+    border: 4px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 3px 5px rgb(255, 255, 255);
+  }
+  100% {
+    width: 0%;
+    height: 50%;
+    /* height: 0%; */
+  }
+}
